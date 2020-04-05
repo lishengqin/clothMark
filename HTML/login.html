@@ -1,95 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>凡饰fansh-会员登录</title>
-	<link rel="icon" href="../image/hf/favicon.ico" mce_href="../image/hf/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="../CSS/login.css">
-	<script src="../JS/jquery.js"></script>
-	<script src="../JS/login.js"></script>
-</head>
-<body>
-<!-- 头部 -->
-	<div class="header">
-		<a href="index.html" class="href"><img src="../image/lr/zi.jpg" alt=""></a>
-		<a href="">帮助</a>
-	</div>
-<!-- 中间 -->
-<div class="main">
-	<div class="left">
-		<img src="../image/lr/zhu1.jpg" alt="" class="mpic">
-		<ul>
-			<li ><img src="../image/lr/zhu2.jpg" alt=""></li>
-			<li style="margin:0 10px 0 12px;">|</li>
-			<li>互联网快时尚品牌</li>
-		</ul>
-	</div>
-	<div class="right">
-		<p class="right1">
-			凡饰fansh登录<span>没有账户免费<a href="reg.html">注册</a></span>
-		</p>
-		<ul class="right2">
-			<li class="ac">普通登录</li>
-			<li >快速登录</li>
-		</ul>
-		<div class="right3 ">
-			<input type="text" placeholder="请输入用户名" class="mes" id="username">
-			<span class="tishi">!用户名不能为空</span>
-			<input type="password" placeholder="请输入密码" class="mes" id="password">
-			<span class="tishi">!密码不能为空</span>
-			<p><a href="">找回密码</a></p>
-		</div>
-		<div class="right4">
-			<div class="one">
-			<input type="text" placeholder="请输入手机号" id="phone" class="ha">
-			<span id="getY">获取短信验证码</span>
-			</div>
-			<span class="ti">!请输入正确的手机号</span>
-			<div class="two">
-			<input type="text" placeholder="验证码" id="yan" class="ha">
-			<div id="ma"></div>
-			<span class="again">看不清？再来一张</span>
-			</div>
-			<span class="ti">!请输入正确的验证码</span>
-			<div class="three">
+  <head>
+    <meta charset="UTF-8" />
+    <title>凡饰fansh-会员登录</title>
+    <link
+      rel="icon"
+      href="../image/hf/favicon.ico"
+      mce_href="../image/hf/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/login.js"></script>
+  </head>
+  <body>
+    <!-- 头部 -->
+    <div class="header">
+      <a href="index.html" class="href"
+        ><img src="../image/lr/zi.jpg" alt=""
+      /></a>
+      <a href="">帮助</a>
+    </div>
+    <!-- 中间 -->
+    <div class="main">
+      <div class="left">
+        <img src="../image/lr/zhu1.jpg" alt="" class="mpic" />
+        <ul>
+          <li><img src="../image/lr/zhu2.jpg" alt="" /></li>
+          <li style="margin:0 10px 0 12px;">|</li>
+          <li>互联网快时尚品牌</li>
+        </ul>
+      </div>
+      <div class="right">
+        <p class="right1">
+          凡饰fansh登录<span>没有账户免费<a href="reg.html">注册</a></span>
+        </p>
+        <ul class="right2">
+          <li class="ac">普通登录</li>
+          <li>快速登录</li>
+        </ul>
+        <div class="right3 ">
+          <input
+            type="text"
+            placeholder="请输入用户名"
+            class="mes"
+            id="username"
+          />
+          <span class="tishi">!用户名不能为空</span>
+          <input
+            type="password"
+            placeholder="请输入密码"
+            class="mes"
+            id="password"
+          />
+          <span class="tishi">!密码不能为空</span>
+          <p><a href="">找回密码</a></p>
+        </div>
+        <div class="right4">
+          <div class="one">
+            <input
+              type="text"
+              style="box-sizing: border-box;width:100%;"
+              placeholder="请输入手机号"
+              id="phone"
+              class="ha"
+            />
+            <!-- <span id="getY">获取短信验证码</span> -->
+          </div>
+          <span class="ti">!请输入正确的手机号</span>
+          <div class="two">
+            <input type="text" placeholder="验证码" id="yan" class="ha" />
+            <div id="ma"></div>
+            <span class="again" style="line-height: 46px;"
+              >看不清？再来一张</span
+            >
+          </div>
+          <span class="ti">!请输入正确的验证码</span>
+          <!-- <div class="three">
 				<input type="text" placeholder="请输入手机验证码" class="ha" id="phonema">
 			</div>
-			<span class="ti">！手机验证码不能为空</span>
-		</div>
-		<div class="right5">
-			<span class="tishi">!用户不存在</span>
-			<a href="javascript:;" id="login" >登录</a>
-		</div>
-		<div class="right6">
-			<p>使用合作网站账号登录凡饰</p>
-			<ul>
-				<li><a href=""><img src="../image/lr/zhi.jpg" alt=""></a></li>
-				<li><a href=""><img src="../image/lr/mi.jpg" alt=""></a></li>
-				<li><a href=""><img src="../image/lr/z360.jpg" alt=""></a></li>
-				<li><a href=""><img src="../image/lr/qq.jpg" alt=""></a></li>
-				<li><a href=""><img src="../image/lr/zw.jpg" alt=""></a></li>
-				<li><a href=""><img src="../image/lr/zb.jpg" alt=""></a></li>
-			</ul>
-		</div>
-	</div>
-</div>
+			<span class="ti">！手机验证码不能为空</span> -->
+        </div>
+        <div class="right5">
+          <span class="tishi">!用户不存在</span>
+          <a href="javascript:;" id="login">登录</a>
+        </div>
+        <div class="right6">
+          <p>使用合作网站账号登录凡饰</p>
+          <ul>
+            <li>
+              <a href=""><img src="../image/lr/zhi.jpg" alt=""/></a>
+            </li>
+            <li>
+              <a href=""><img src="../image/lr/mi.jpg" alt=""/></a>
+            </li>
+            <li>
+              <a href=""><img src="../image/lr/z360.jpg" alt=""/></a>
+            </li>
+            <li>
+              <a href=""><img src="../image/lr/qq.jpg" alt=""/></a>
+            </li>
+            <li>
+              <a href=""><img src="../image/lr/zw.jpg" alt=""/></a>
+            </li>
+            <li>
+              <a href=""><img src="../image/lr/zb.jpg" alt=""/></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <!-- 尾部 -->
 
+    <div class="footer">
+      <span class="footer1"
+        >Copyright 2007 - 2016 fansh.com All Rights Reserved 京ICP证100557号
+        京公网安备11011502002400号
+        出版物经营许可证新出发京批字第直110138号</span
+      >
 
-
-
-
-<!-- 尾部 -->
-
-<div class="footer">
-		<span class="footer1">Copyright 2007 - 2016 fansh.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</span>
-
-		<div class="footer2">
-			<a href=""><img src="../image/lr/foot1.jpg" alt=""></a>
-			<a href=""><img src="../image/lr/foot2.jpg" alt=""></a>
-			<a href=""><img src="../image/lr/foot3.jpg" alt=""></a>
-			<a href=""><img src="../image/lr/foot4.jpg" alt=""></a>			
-		</div>
-	</div>
-</body>
+      <div class="footer2">
+        <a href=""><img src="../image/lr/foot1.jpg" alt=""/></a>
+        <a href=""><img src="../image/lr/foot2.jpg" alt=""/></a>
+        <a href=""><img src="../image/lr/foot3.jpg" alt=""/></a>
+        <a href=""><img src="../image/lr/foot4.jpg" alt=""/></a>
+      </div>
+    </div>
+  </body>
 </html>

@@ -74,7 +74,7 @@ $(function(){
 //编辑
 //地区的ajax
 	$.ajax({
-		type:"POST",
+		type:"get",
 		url:"../JSON/province.json",
 		dataType: 'JSON',
 		success:function(data){
