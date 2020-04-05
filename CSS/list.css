@@ -1,0 +1,432 @@
+*{
+	margin: 0; padding: 0;
+}
+ul, li{
+	list-style-type: none;
+	color: #727171;
+}
+a{
+	text-decoration: none;
+	color: #727171;
+}
+.hover{
+	color: #b81c22;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+#main{
+	width: 1200px;
+	margin: 0 auto;
+}
+.locationdiv span{
+	color: #b4b4b4;
+	line-height: 40px;
+	font-size: 12px;
+}
+.locationdiv a{
+	font-size: 12px;
+}
+.locationdiv .locatRight{
+	float: right;
+	line-height: 40px;
+	font-size: 12px;
+}
+.locatRight span{
+	color: #b81c22;
+}
+.selectArea{
+	border: 1px solid #c7cacd;
+	padding-right: 1px;
+	margin-bottom: 15px;
+}
+.selectChild{
+	border-bottom: 1px dashed #ccc;
+}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.selectLeft{
+	width: 66px;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #ccc;
+}
+.selectLeft em{
+	display: block;
+	height: 24px;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 24px;
+	padding: 5px 0px;
+}
+.selectRight{
+	width: 1130px;
+	float: right;
+}
+.selectRight ul li{
+	font-size: 12px;
+	line-height: 24px;
+	padding: 5px 0px;
+	margin-left: 25px;
+}
+.selectRight ul li a{
+	color: black;
+}
+.selectRight ul li a span{
+	color: #999;
+}
+.commBarTop{
+	border-bottom: 2px solid #b81c22;
+	width: 1200px;
+}
+.comm_top_left{
+	width: 88px;
+	background: #b81c22;;
+	text-align: center;
+}
+.comm_top_left a{
+	line-height: 30px;
+	font-size: 12px;
+	color: white;
+}
+.comm_top_right{
+	margin-top: 10px;
+}
+.comm_top_right span{
+	display: block;
+	float: left;
+	margin-left: 12px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.leftArrow{
+	display: block;
+	width: 19px; height: 17px;
+	background: url("../image/list/IMG/zs.png") no-repeat 0px -72px;
+}
+.nextPage{
+	display: block;
+	width:48px; height: 17px;
+	background: url("../image/list/IMG/zs.png") no-repeat 0px -89px;
+}
+.commBarCenter{
+	border: 1px solid #ccc;
+	border-top: none;
+	width: 1200px;
+}
+.center_list ul{
+	float: left;
+}
+.center_list ul li{
+	float: left;
+	height: 34px;
+	padding: 0 12px 0 20px;
+	border-right: 1px solid #999;
+}
+.center_list ul li a{
+	display: block;
+	width: 40px; height: 34px;
+	font-size: 12px;
+	line-height: 34px;
+	color: black;
+	background: url(../image/list/IMG/zs.png) no-repeat 30px -3078px;
+}
+.center_list ul .pldown{
+	padding-left: 15px;
+	background: #eee;
+	position: relative;
+}
+.center_list ul .pldown .pldown_a{
+	width: 71px; height: 34px;
+	background: url(../image/list/IMG/jttop2.png) no-repeat 25px 9px;
+}
+.pldown .pldown_a span{
+	display: inline-block;
+	width: 11px; height: 10px;
+	background: url(../image/list/IMG/zs.png) no-repeat 0px -3131px;
+	margin-left: 20px;
+}
+.pldown_main{
+	position: absolute;
+	z-index: 2500;
+	left: -1px;
+	top: 34px;
+	background: #eee;
+	display: none;
+	border: 1px solid #ddd;
+}
+.center_list ul li .pldown_main li{
+	width: 71px;
+	padding: 0px 12px 0px 15px;
+	cursor: pointer;
+	border-right: none;
+}
+.sift{
+	float: left;
+	padding: 0px 15px 7px;
+	border-right: 1px solid #ccc;
+	position: relative;
+	z-index: 6;
+}
+.sift .inarea{
+	position: relative;
+	z-index: 10;
+}
+.sift .inarea input{
+	width: 35px; height: 17px;
+	line-height: 17px;
+	margin-top: 6px;
+}
+.emp_confirm{
+	position: absolute;
+	top: 2px; left: 10px;
+	width: 110px; height: 50px;
+	background: #ffffff;
+	z-index: 5;
+	border: 1px solid #b4b4b4;
+	display: none;
+}
+.emp_confirm p{
+	margin-top: 30px;
+}
+.emp_confirm p button{
+	cursor: pointer;
+}
+.emp{
+	border: none;
+	background: transparent;
+	margin: 0px 30px 0px 5px;
+	outline: none;
+}
+.emp:hover{
+	color: #b81c22;;
+}
+.center_right a{
+	display: block;
+	height: 34px; width: 88px;
+	background: #eee;
+	text-align: center;
+	line-height: 34px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.returnTop{
+	width: 34px; height: 24px;
+	cursor: pointer;
+	background: url(../image/list/IMG/zs.png) no-repeat scroll 0 -2079px transparent;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	display: none;
+}
+.mainList .listGoods{
+	width: 1215px;
+	margin: 0px auto;
+	padding-left: 15.5px;
+}
+.mainList .listGoods li{
+	float: left;
+	width: 230px;
+	margin: 0 12.5px 20px 0px;
+	position: relative;
+}
+/*详情页样式*/
+.titleDiv{
+	width: 280px; height: 415px;
+	position: absolute;
+	left: 240px; top: -40px;
+	z-index: 2000;
+	background: #d2d2d0;
+	padding: 10px 10px;
+}
+/*箭头样式*/
+.triangle{
+	width: 16px; height: 32px;
+	position: absolute;
+	left: 225px; top: 0px;
+	background: url(../image/list/IMG/left.png) no-repeat -6px 0px;
+	z-index: 200;
+}
+.titleDiv .titleImg{
+	margin-bottom: 10px;
+}
+.titleDiv .titleImg img{
+	width: 280px; height: 280px;
+}
+.titleDiv .proname {
+	color: black;
+	font-size: 15px;
+	margin-bottom: 5px;
+	width:280px;
+	height:20px;
+	text-align: center;
+	line-height: 20px;
+	overflow: hidden;
+}
+.titleDiv .pronum{
+	font-size: 12px;
+	font-style: normal;
+}
+.titleDiv .prices{
+	display: block;
+	width: 160px;
+	height: 15px;
+	font-size: 12px;
+	color: #b81c22;
+	margin-top: 25px;
+	padding: 5px 0px 5px 10px;
+	border-right: 1px solid #000000;
+}
+.titleDiv .goods{
+	float: right;
+	margin-top: -25px;
+}
+.titleDiv .praise{
+	display: inline-block;
+	font-size: 12px;
+	font-weight: normal;
+	color: #b81c22;
+	padding: 0px 0px 5px 3px;
+}
+.titleDiv .pranum{
+	display: block;
+	font-size: 28px;
+	color: #b81c22;
+	margin-top: -10px;
+	padding-right: 5px;
+	font-family: "微软雅黑";
+}
+.mainList .listGoods .listImg{
+	display: block;
+	width: 228px; height: 228px;
+	border: 1px solid #ccc;
+}
+.mainList .listGoods li em{
+	display: block;
+	width: 40px; height: 23px;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 1000;
+	background: url(../image/list/IMG/zs.png) no-repeat scroll 0 -631px transparent;
+}
+.mainList .listGoods li p{
+	margin:10px 0px 5px;
+	line-height: 38px;
+	text-align: center;
+	height: 38px;
+	width:230px;
+	overflow: hidden;
+}
+.mainList .listGoods li p a{
+	font-size: 13px;
+	font-family: "微软雅黑";
+	padding-bottom: 5px;
+}
+.sprice{
+	display: block;
+	font-size: 15px;
+	color: #b81c22;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.pager{
+	width: 1200px;
+	margin: 0 auto;
+}
+.btnCon{
+	float: right;
+}
+#hover{
+	color: #b81c22;
+}
+.btnCon .prebtn{
+	display: inline-block;
+	width: 43px; height: 24px;
+	padding-left: 14px;
+	text-align: left;
+	background: url(../image/list/IMG/zs.png) no-repeat scroll 3px -1996px;
+	border: 1px solid #efefef;
+	float: left;
+}
+.btnCon .prebtn a{
+	font-size: 12px;
+	line-height: 24px;
+}
+.btnCon .pagenumber{
+	display: inline-block;
+	margin: 0px 7px;
+	float: left;
+}
+.btnCon .pagenumber li{
+	width: 26px; height: 24px;
+	line-height: 24px;
+	background: #b81c22;
+	text-align: center;
+	color:#ffffff;
+	font-weight: bold;
+	border: 1px solid #ededed;
+	cursor: pointer;
+}
+.btnCon .nextbtn{
+	display: inline-block;
+	width: 43px; height: 24px;
+	padding-right: 14px;
+	text-align: right;
+	background: url(../image/list/IMG/zs.png) no-repeat scroll 46px -1954px;
+	border: 1px solid #efefef;
+	float: left;
+}
+.btnCon .nextbtn a{
+	font-size: 12px;
+	line-height: 24px;
+}
+.btnCon i{
+	font-style: normal;
+	font-size: 12px;
+	display: inline-block;
+	margin: 6px 10px 0px;
+	float: left;
+}
+.btnCon strong{
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	display: inline-block;
+	margin: 6px 0px 0px;
+	float: left;
+}
+.btnCon input{
+	width: 26px; height: 24px;
+	border: 1px solid #ededed;
+	text-align: center;
+	display: inline-block;
+	margin: 0px 2px;
+	float: left;
+}
+.btnCon em{
+	font-size: 12px;
+	font-style: normal;
+	display: inline-block;
+	margin: 6px 0px 0px;
+	float: left;
+}
+.btnCon button{
+	width: 49px; height: 26px;
+	margin-left: 10px;
+	border: none;
+	cursor: pointer;
+	background: url(../image/list/IMG/zs.png) no-repeat scroll 0px -2044px;
+	float: left;
+}
+.Lxuanze{
+	color:#999;
+}
+.Lxuanze:hover{
+	color:#999;
+}  

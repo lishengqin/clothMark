@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+/*商品清单*/
+.every{
+	width:980px;
+	margin:0 auto;
+	margin-top:30px;
+}
+.title{
+	background: #eee;
+	border:1px solid #ccc;
+	padding:0 50px;
+	box-sizing: border-box;
+	line-height: 40px;
+	color:#a10;
+}
+.time{
+	display: block;
+	float: right;
+}
+.goods_list_title {
+	width:980px;
+	text-align: center;
+	background: #ddd;
+	margin:0 auto;
+	overflow: hidden;
+}
+.goods_list_title p{
+	width:20%;
+	float: left;
+	padding: 0 10px;
+	line-height: 50px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+/*商品*/
+.goods_list{
+	width:980px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	background: none;
+}
+.goods_list li p{
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+}
+.goods_list li{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	padding:10px 0;
+}
+.type li{
+	float: left;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-sizing: border-box;
+    padding-left: 50px;
+    line-height: 30px;	
+}
+.type li span{
+	margin-left: 20px;
+}
+.person p{
+	border:1px solid #ccc;
+	border-top:none;
+	padding:0 50px;
+	line-height: 30px;
+}
+.person p .phone{
+	display: block;
+	float: right;
+}
+/*第一部分*/
+#hea{
+	width:100%;
+	height:46px;
+}
+#heab{
+	width:980px;
+	margin:10px auto;
+	height:46px;
+	border-bottom: 1px solid #ccc;
+}
+#hea img{
+	width: 114px;
+	height: 38px;
+	line-height: 46px;
+	margin-left:94px;
+	float: left;
+}
+#help {
+	cursor: pointer;
+	float: right;
+	font-size: 14px;
+	margin-top:12px;
+}
+/*第二部分*/
+#two{
+	width:980px;
+	height:28px;
+	margin:10px auto;
+	background: url("../image/buy/new.png") no-repeat  0 -56px;
+}
+#two ul{
+	overflow: hidden;
+	margin-left:48px;
+}
+#two ul li{
+	float: left;
+    font-size: 12px;
+	line-height: 28px;
+	color:#666;
+	margin-right: 94px;
+}
+/*尾部*/
+#six{
+	width:1200px;
+	margin:20px auto 0;
+}
+#six #dii{
+	width: 1200px;
+	text-align: center;
+	padding: 0;
+	line-height: 56px;
+	color:#999;
+	font-size: 10px;
+}
+#six #sb{
+	width:1200px;
+	text-align: center;
+}
+#six ul{
+	display: inline-block;
+	overflow: hidden;
+}
+#six ul li{
+	float:left;
+	margin-left: 26px;
+}

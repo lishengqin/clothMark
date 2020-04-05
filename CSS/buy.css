@@ -1,0 +1,391 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	width:100%;
+}
+/*第一部分*/
+#hea{
+	width:100%;
+	height:46px;
+}
+#heab{
+	width:980px;
+	margin:10px auto;
+	height:46px;
+	border-bottom: 1px solid #ccc;
+}
+#hea img{
+	width: 114px;
+	height: 38px;
+	line-height: 46px;
+	margin-left:94px;
+	float: left;
+}
+#help {
+	cursor: pointer;
+	float: right;
+	font-size: 14px;
+	margin-top:12px;
+}
+/*第二部分*/
+#two{
+	width:980px;
+	height:28px;
+	margin:10px auto;
+	background: url("../image/jiesuan/new.gif") no-repeat  0 -28px;
+}
+#two ul{
+	overflow: hidden;
+	margin-left:48px;
+}
+#two ul li{
+	float: left;
+    font-size: 12px;
+	line-height: 28px;
+	color:#666;
+	margin-right: 84px;
+}
+/*编辑信息*/
+.write_box{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+	z-index: 9;
+}
+.write{
+	border:2px solid #ccc;
+	background: #fff;
+	display: inline-block;
+	padding:40px;
+	margin-top: 200px;
+	margin-left: 350px;
+	position: fixed;
+}
+.close{
+	width:30px;
+	height:30px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 28px;
+	border-radius: 50%;
+	border:1px solid #ccc;
+	color:#a10;
+	position: absolute;
+	top:14px;
+	right:14px;
+	cursor: pointer;
+}
+.sure{
+	width: 150px;
+    height: 40px;
+    color: white;
+    background: #a10;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+}
+.write p{
+	margin:10px 0;
+	padding-left: 20px;
+	line-height: 26px;
+}
+.write input{
+	width:200px;
+	height:26px;
+	border:1px solid #ccc;
+	border-radius: 8px;
+	padding-left: 10px;
+	line-height: 26px;
+	outline: none;
+}
+.write select{
+	width: 100px;
+    height: 26px;
+    border-radius: 6px;
+    outline: none;
+}
+.ti,.tishi{
+	width:100px;
+	display: inline-block;
+	line-height: 20px;
+	font-size: 12px;
+	color:#a10;
+	display: none;
+}
+.ti{
+	position: absolute;
+	top:0px;
+}
+.di{
+	margin-right: 6px;
+	display: none;
+}
+/*信息*/
+.formation{
+	width:980px;
+	margin:10px auto 30px;
+	border:1px solid #ccc;
+}
+.formation li{
+	overflow: hidden;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+}
+/*左边*/
+.for_left{
+	background: #eeeeee;
+    width: 150px!important;
+    text-align: center;
+    color: #000;
+    margin: 0px;
+	float: left;
+	line-height: 220px;
+	font-size: 16px;
+}
+/*右边*/
+.for_right{
+	float: left;
+	width:830px;
+	padding:0 70px;
+	box-sizing: border-box;
+}
+/*没选*/
+.none{
+	width:200px;
+	height:100px;
+	border: 1px dashed #ccc;
+	text-align: center;
+	line-height: 100px;
+	box-sizing: border-box;
+	margin:60px 0px;
+	cursor: pointer;
+}
+/*选了*/
+.have{
+	display: none;
+	padding-bottom: 30px;
+}
+/*地址*/
+.add_new{
+	font-size: 14px;
+	color:#a10;
+	cursor: pointer;
+	margin-left: 10px;
+}
+.show_more{
+	font-size: 14px;
+	color:#a10;
+	cursor: pointer;
+	margin-left: 10px;
+	display: none;
+}
+.have_list{
+	border:none;
+	overflow: hidden;
+	height:220px;
+	margin-bottom: 10px;
+}
+.have_list li{
+	float: left;
+	width:210px;
+	height:210px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	margin:10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color:#666;
+	padding:0 10px 20px 30px;
+	transition: 0.5s;
+	position: relative;
+}
+.have_list li p{
+	line-height: 24px;
+}
+.have_list .have_name{
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.have_list button{
+	display: block;
+    width: 50px;
+    height: 25px;
+    margin-top: 10px;
+    color: #a10;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    float: left;
+    position: absolute;
+    bottom:20px;
+}
+.have_list .delete{
+	right:20px;
+}
+.have_list .edit{
+	left:20px;
+}
+.have .have_active{
+	border-color: #a10;
+}
+.have li:hover{
+	border-color: #a10;
+}
+.have_list li:hover button{
+	opacity: 1;
+}
+/*配送方式*/
+.have .pei_type{
+	margin-top: 10px;
+}
+.have .pei_type label{
+	margin-right:20px;
+	margin-left:4px;
+	font-size: 15px;
+	color:#555;
+}
+.have p{
+	font-size: 14px;
+	color:#666;
+	line-height: 26px;
+	padding-left: 10px;
+}
+.have_lie{
+	overflow: hidden;
+	margin:10px 0;
+}
+.have_zhi{
+	margin-top: 45px;
+}
+.have_lie li{
+	float: left;
+	width:210px;
+	height:100px;
+	line-height: 100px;
+	text-align: center;
+	border:1px solid #ccc;
+	margin:10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color:#666;
+	transition: 0.5s;
+	cursor: pointer;
+}
+/*商品清单*/
+.goods{
+	width:980px;
+	margin:40px auto;
+	padding:0 50px;
+	box-sizing: border-box;
+	height:50px;
+	line-height: 50px;
+	background: #eee;
+	color: #333;
+	font-size: 14px;
+}
+.goods a{
+	display: block;
+	float: right;
+	color: #a10;
+	font-size: 14px;
+}
+.goods_list_title {
+	width:980px;
+	text-align: center;
+	background: #ddd;
+	margin:0 auto;
+	overflow: hidden;
+}
+.goods_list_title p{
+	width:20%;
+	float: left;
+	padding: 0 10px;
+	line-height: 50px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+/*商品*/
+.goods_list{
+	width:980px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+	background: none;
+}
+.goods_list li p{
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+}
+.goods_list li{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+	padding:10px 0;
+}
+/*付款*/
+.money_num{
+	width:980px;
+	margin:20px auto;
+	font-size:20px;
+	font-weight: 600;
+	color:#a10 ;
+	text-align: right;
+	padding-right: 50px;
+}
+.money_num span{
+	font-weight: 700;
+	font-size: 30px;
+}
+.money_num .buy-btn{
+	display: inline-block;
+    width: 90px;
+    height: 50px;
+    font-size: 18px;
+    color: #a10;
+    background: #fff;
+    border: 2px solid #a10;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-weight: 600;
+    outline: none;
+}
+/*尾部*/
+#six{
+	width:1200px;
+	margin:20px auto 0;
+}
+#six #dii{
+	width: 1200px;
+	text-align: center;
+	padding: 0;
+	line-height: 56px;
+	color:#999;
+	font-size: 10px;
+}
+#six #sb{
+	width:1200px;
+	text-align: center;
+}
+#six ul{
+	display: inline-block;
+	overflow: hidden;
+}
+#six ul li{
+	float:left;
+	margin-left: 26px;
+}

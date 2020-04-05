@@ -1,0 +1,88 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	width:100%;
+}
+/*第一部分*/
+#hea{
+	width:100%;
+	height:46px;
+}
+#heab{
+	width:980px;
+	margin:10px auto;
+	height:46px;
+	border-bottom: 1px solid #ccc;
+}
+#hea img{
+	width: 114px;
+	height: 38px;
+	line-height: 46px;
+	margin-left:94px;
+	float: left;
+}
+#help {
+	cursor: pointer;
+	float: right;
+	font-size: 14px;
+	margin-top:12px;
+}
+/*第二部分*/
+#two{
+	width:980px;
+	height:28px;
+	margin:10px auto;
+	background: url("../image/jiesuan/new.png") no-repeat  0 -56px;
+}
+#two ul{
+	overflow: hidden;
+	margin-left:48px;
+}
+#two ul li{
+	float: left;
+    font-size: 12px;
+	line-height: 28px;
+	color:#666;
+	margin-right: 94px;
+}
+/*内容*/
+p{
+	width: 980px;
+    margin: 50px auto;
+    font-size: 30px;
+    color: #a10;
+    font-weight: 600;
+}
+/*尾部*/
+#six{
+	width:1200px;
+	margin:20px auto 0;
+}
+#six #dii{
+	width: 1200px;
+	text-align: center;
+	padding: 0;
+	line-height: 56px;
+	color:#999;
+	font-size: 10px;
+}
+#six #sb{
+	width:1200px;
+	text-align: center;
+}
+#six ul{
+	display: inline-block;
+	overflow: hidden;
+}
+#six ul li{
+	float:left;
+	margin-left: 26px;
+}

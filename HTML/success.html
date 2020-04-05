@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单提交成功--fansh诚品</title>
+	<link rel="icon" href="../image/hf/favicon.ico" mce_href="../image/hf/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href=../CSS/success.css>
+</head>
+<body>
+	<!-- 第一部分 -->
+	<div id="hea">
+		<div id="heab">
+			<img src="../image/jiesuan/zhu2.jpg" alt="">
+		 	<span id="help">帮助中心</span>
+		</div>
+	</div>
+<!-- 第二部分 -->
+	<div id="two">
+		<ul>
+			<li>1.我的购物车</li>
+			<li>2.填写核对信息单</li>
+			<li style="color:white">3.成功提交订单</li>
+		</ul>
+	</div>
+<!-- 内容 -->
+	<p>订单提交成功！</p>
+	<p style="font-size: 18px;font-weight: normal;">您将<span class="num" style="font-size: 30px">3</span>秒后回到首页！</p>
+	<p style="font-size: 20px;font-weight: normal;">谢谢您的支持，我们一定以最快的速度，最好的服务，把您购买的宝贝送到您的手中！</p>
+<!-- 尾部 -->
+	<div id="six">
+		<p id="dii">Copyright 2007 - 2017 fansh.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号</p>
+		<div id="sb">
+		<ul>
+			<li><img src="../image/jiesuan/foot1.jpg" alt=""></li>
+			<li><img src="../image/jiesuan/foot2.jpg" alt=""></li>
+			<li><img src="../image/jiesuan/foot3.jpg" alt=""></li>
+		</ul>
+		</div>
+	</div>
+<script src="../JS/jquery.js"></script>
+<script>
+	var num=3;
+	setInterval(function(){
+		num--;
+		$(".num").html(num);
+		if(num==1){
+			window.location.href="index.html"
+		}
+		
+	},1000)
+</script>
+</body>
+</html>

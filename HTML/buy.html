@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>确认提交订单--fansh诚品</title>
+	<link rel="icon" href="../image/hf/favicon.ico" mce_href="../image/hf/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href=../CSS/buy.css>
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/buy.js"></script>
+</head>
+<body>
+<!-- 第一部分 -->
+	<div id="hea">
+		<div id="heab">
+			<img src="../image/jiesuan/zhu2.jpg" alt="">
+		 	<span id="help">帮助中心</span>
+		</div>
+	</div>
+<!-- 第二部分 -->
+	<div id="two">
+		<ul>
+			<li>1.我的购物车</li>
+			<li style="color:white">2.填写核对信息单</li>
+			<li>3.成功提交订单</li>
+		</ul>
+	</div>
+<!-- 编辑信息 -->
+	<div class="write_box">
+		<div class="write">
+			<div class="close">×</div>
+			<p>收&ensp;货&ensp;人：
+				<input type="text" class="name">
+				<span class="tishi" style="margin-left: 20px">!请填写姓名</span>
+			</p>
+			<p>收获地址：
+				<select name="" class="province local">
+					<option value="">请选择省份</option>
+				</select>
+				<select name="" class="city local">
+					<option value="">请选择城市</option>
+				</select>
+				<select name="" class="area local">
+					<option value="">请选择地区</option>
+				</select>
+			</p>
+			<p style="position: relative;">
+				<span class="ti" style="left:112px;">!请选择省份</span>
+				<span class="ti" style="left:212px;">!请选择城市</span>
+				<span class="ti" style="left:312px;">!请选择地区</span></p>
+			<p>详细地址：
+				<span>
+					<span class="di"></span>
+					<span class="di"></span>
+					<span class="di"></span>
+				</span>
+				<input type="text" class="address" placeholder="请填写详细地址及门牌号">
+				<span class="tishi" style="margin-left: 20px">!请填写正确的地址</span>
+			</p>
+			<p>邮政编码：
+				<input type="text" class="zheng">
+				<span class="tishi" style="margin-left: 20px">!请填写正确邮编</span>
+			</p>
+			<p>手&ensp;机&ensp;号：
+				<input type="text" class="tel">
+				<span class="tishi" style="margin-left: 20px">!请填写正确手机号</span>
+			</p>
+			<button class="sure">保存并配送到该地址</button>
+		</div>
+	</div>
+<!-- 信息 -->
+	<ul class="formation">
+		<li class="lsq_for">
+			<h3 class="for_left">收获地址：</h3>
+			<div class="for_right">
+				<div class="none">
+					请先选择收获地址
+				</div>
+				<div class="have">
+					<ul class="have_list">
+						<!-- <li>
+							<p class="have_name">李升琴</p>
+							<p>12237498948</p>
+							<p>江西省 南昌市 南昌县</p>
+							<p>瑶湖先区(330022)</p>
+							<button class="edit">编辑</button>
+							<button class="delete">删除</button>
+						</li> -->
+					</ul>
+					<span class="show_more">《 显示更多</span>
+					<span class="add_new">+添加新地址</span>
+				</div>
+			</div>
+		</li>
+		<li class="lsq_for">
+			<h3 class="for_left">配送方式：</h3>
+			<div class="for_right">
+				<div class="none">
+					请先选择收获地址
+				</div>
+				<div class="have">
+					<p class="pei_type">
+						<input type="radio" checked="checked" name="pei_type" id="shun"><label for="shun">顺丰</label>
+						<input type="radio" name="pei_type" id="you"><label for="you">EMS</label>
+						<input type="radio" name="pei_type" id="yuan"><label for="yuan">圆通</label>
+					</p>
+					<ul class="have_lie have_pei">
+						<li class="have_active">周一至周五工作日送</li>
+						<li>周六、周日及节假日送</li>
+						<li>休息节假日以及工作日均可</li>
+					</ul>
+					<p>声明：</p>
+					<p>1.送货时间：早8:30至晚7:30</p>
+					<p>2.我们会努力按照您选择的时间进行配送，但因天气、交通等因素影响，您的订单可能会有延误现象，请您谅解,十分感谢，您的谅解，是对我们工作的最大肯定！</p>
+				</div>
+			</div>
+		</li>
+		<li class="lsq_for">
+			<h3 class="for_left">支付方式：</h3>
+			<div class="for_right">
+				<div class="none">
+					请先选择收获地址
+				</div>
+				<div class="have">
+					<ul class="have_lie have_zhi">
+						<li class="have_active">在线支付</li>
+						<li>货到付款(现金)</li>
+						<li>货到付款(刷卡)</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+<!-- 商品清单 -->
+	<div class="goods">
+		商品清单
+		<a href="jiesuan.html">回到购物车，修改商品 》</a>
+	</div>
+<!-- 商品列表 -->
+	<!-- 头 -->
+	<div class="goods_list_title">
+		<p>商品名称</p>
+		<p>尺码</p>
+		<p>单价</p>
+		<p>数量</p>
+		<p>小计</p>
+	</div>
+	<!-- 商品 -->
+	<ul class="goods_list goods_list_title">
+		<!-- <li>
+			<p>童装T恤 熊本熊 T13 </p>
+			<p>S</p>
+			<p>78.00</p>
+			<p>1</p>
+			<p>78.00</p>
+		</li> -->
+	</ul>
+<!-- 付款 -->
+	<p class="money_num">
+		已支付：<span class="my_money">￥0.00</span>
+		您还需支付：<span class="money">￥0.00元</span><br/>
+		<button class="buy-btn">提交订单</button>
+	</p>
+
+<!-- 尾部 -->
+	<div id="six">
+		<p id="dii">Copyright 2007 - 2017 fansh.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号 出版物经营许可证新出发京批字第直110138号</p>
+		<div id="sb">
+		<ul>
+			<li><img src="../image/jiesuan/foot1.jpg" alt=""></li>
+			<li><img src="../image/jiesuan/foot2.jpg" alt=""></li>
+			<li><img src="../image/jiesuan/foot3.jpg" alt=""></li>
+		</ul>
+		</div>
+	</div>
+
+</body>
+</html>
