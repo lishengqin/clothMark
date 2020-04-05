@@ -18,7 +18,7 @@ $(function(){
     var pl_pages;                    
     $.ajax({
         url:"../JSON/detail.json",
-        type:"post",
+        type:"get",
         success:function(data){
             $.each(data,function(i){
                 if(data[i]["goodsId"]==goodsId){

@@ -1,73 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>凡饰fansh-会员免费注册</title>
-	<link rel="icon" href="../image/hf/favicon.ico" mce_href="../image/hf/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="../CSS/login.css">
-	<script src="../JS/jquery.js"></script>
-	<script src="../JS/reg.js"></script>
-</head>
-<body >
-<!-- 头部 -->
-	<div class="header">
-		<a href="index.html" class="href"><img src="../image/lr/zi.jpg" alt=""></a>
-		<a href="">帮助</a>
-	</div>
-<!-- 中间 -->
-<div class="main">
-	<div class="left">
-		<img src="../image/lr/zhu1.jpg" alt="" class="mpic">
-		<ul>
-			<li ><img src="../image/lr/zhu2.jpg" alt=""></li>
-			<li style="margin:0 10px 0 12px;">|</li>
-			<li>互联网快时尚品牌</li>
-		</ul>
-	</div>
-	<div id="mainright">
-		<p>
-			注册新用户<span>我已经注册，现在就<a href="login.html">登录</a></span>
-		</p>
-		<ul id="right2">
-			<li>
-				<input type="text" placeholder="验证码" class="mgg" id="num">
-				<span class="poma"></span>
-			</li>
-			<span class="shi">！请输入正确的验证码</span>
-			<li>
-				<input type="text" placeholder="请输入手机号" class="mgg" id="tel">
-				<span id="getma">获取短信验证码</span>
-			</li>
-			<span class="shi">！请输入正确的手机号</span>
-			<li>
-				<input type="text" placeholder="填写手机验证码" class="mgg" id="phonema">
-			</li>
-			<span class="shi">！请输入手机验证码</span>
-			<li>
-				<input type="password" placeholder="设定登录密码" class="mgg" id="setmi">
-			</li>
-			<span class="shi">！请设置6-10位数字字母组成的密码</span>
-			<li>
-				<input type="password" placeholder="再次输入密码" class="mgg" id="twomi">
-			</li>
-			<span class="shi">！两次密码不一致</span>
-		</ul>
-		<p class="must">
-			<input type="checkbox" class="xuan">请阅读<a href="">《fansh凡饰诚品服务条款》</a>
-		</p>
-		<span class="shi">！请阅读条款</span>
-		<button id="reg">立即注册</button>
-	</div>	
-</div>
-<!-- 尾部 -->
-<div class="footer" style="border:none;margin-top: 60px;">
-		<span class="footer1">Copyright 2007 - 2016 fansh.com All Rights Reserved 京ICP证100557号 京公网安备11011502002400号 出版物经营许可证新出发京批字第直110138号</span>
-		<div class="footer2">
-			<a href=""><img src="../image/lr/foot1.jpg" alt=""></a>
-			<a href=""><img src="../image/lr/foot2.jpg" alt=""></a>
-			<a href=""><img src="../image/lr/foot3.jpg" alt=""></a>
-			<a href=""><img src="../image/lr/foot4.jpg" alt=""></a>			
-		</div>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>凡饰fansh-会员免费注册</title>
+    <link
+      rel="icon"
+      href="../image/hf/favicon.ico"
+      mce_href="../image/hf/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/login.css" />
+    <script src="../JS/jquery.js"></script>
+    <script src="../JS/reg.js"></script>
+  </head>
+  <body>
+    <!-- 头部 -->
+    <div class="header">
+      <a href="index.html" class="href"
+        ><img src="../image/lr/zi.jpg" alt=""
+      /></a>
+      <a href="">帮助</a>
+    </div>
+    <!-- 中间 -->
+    <div class="main">
+      <div class="left">
+        <img src="../image/lr/zhu1.jpg" alt="" class="mpic" />
+        <ul>
+          <li><img src="../image/lr/zhu2.jpg" alt="" /></li>
+          <li style="margin:0 10px 0 12px;">|</li>
+          <li>互联网快时尚品牌</li>
+        </ul>
+      </div>
+      <div id="mainright">
+        <p>
+          注册新用户<span>我已经注册，现在就<a href="login.html">登录</a></span>
+        </p>
+        <ul id="right2">
+          <li>
+            <input type="text" placeholder="验证码" class="mgg" id="num" />
+            <span class="poma"></span>
+          </li>
+          <span class="shi">！请输入正确的验证码</span>
+          <li>
+            <input
+              type="text"
+              placeholder="请输入手机号"
+              class="mgg"
+              id="tel"
+            />
+            <span id="getma">获取短信验证码</span>
+          </li>
+          <span class="shi">！请输入正确的手机号</span>
+          <li>
+            <input
+              type="text"
+              placeholder="填写手机验证码(不空就行)"
+              class="mgg"
+              id="phonema"
+            />
+          </li>
+          <span class="shi">！请输入手机验证码</span>
+          <li>
+            <input
+              type="password"
+              placeholder="设定登录密码"
+              class="mgg"
+              id="setmi"
+            />
+          </li>
+          <span class="shi">！请设置6-10位数字字母组成的密码</span>
+          <li>
+            <input
+              type="password"
+              placeholder="再次输入密码"
+              class="mgg"
+              id="twomi"
+            />
+          </li>
+          <span class="shi">！两次密码不一致</span>
+        </ul>
+        <p class="must">
+          <input type="checkbox" class="xuan" />请阅读<a href=""
+            >《fansh凡饰诚品服务条款》</a
+          >
+        </p>
+        <span class="shi">！请阅读条款</span>
+        <button id="reg">立即注册</button>
+      </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer" style="border:none;margin-top: 60px;">
+      <span class="footer1"
+        >Copyright 2007 - 2016 fansh.com All Rights Reserved 京ICP证100557号
+        京公网安备11011502002400号
+        出版物经营许可证新出发京批字第直110138号</span
+      >
+      <div class="footer2">
+        <a href=""><img src="../image/lr/foot1.jpg" alt=""/></a>
+        <a href=""><img src="../image/lr/foot2.jpg" alt=""/></a>
+        <a href=""><img src="../image/lr/foot3.jpg" alt=""/></a>
+        <a href=""><img src="../image/lr/foot4.jpg" alt=""/></a>
+      </div>
+    </div>
+  </body>
 </html>
