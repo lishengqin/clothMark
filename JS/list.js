@@ -445,7 +445,7 @@ $(function() {
   });
   //传递给详情页
   $(".listGoods").on("click", ".listImg", function() {
-    window.location = "Details.html?id=" + $(this).attr("id");
+    window.location = "details.html?id=" + $(this).attr("id");
   });
   $("#top").load("head.html");
   $("#lsq_foot").load("foot.html");
